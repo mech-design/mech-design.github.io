@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="CMSC498T - Mechanism Design" />
         <meta name="author" content="John P. Dickerson, Marina Knittel" />
@@ -20,35 +20,37 @@
         <title>Mechanism Design</title>
         
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            
-            <!-- Fancy fonts for the headers -->
-            <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet" />
-            
-            <!-- Bootstrap 4+ dropped icons for some reason, this reloads them -->
-            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- Fancy fonts for the headers -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet" />
+        
+        <!-- Bootstrap 4+ dropped icons for some reason, this reloads them -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     </head>
     
     <body>
         
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a href="#description">Description</a></li>
-                        <li class="nav-item" role="presentation"><a href="#schedule">Schedule</a></li>
-                        <li class="nav-item" role="presentation"><a href="#related">Related Courses</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CMSC498T</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#description">Description</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#related">Related Courses</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
             <h3 class="text-muted">CMSC498T &ndash; Spring 2022</h3>
             
             <div class="jumbotron">
@@ -59,7 +61,7 @@
                 <address>
                     <strong>Who:</strong> <a href="http://jpdickerson.com">John P. Dickerson</a> and <a href="https://mknittel.github.io/">Marina Knittel</a><br/>
                     <strong>When:</strong> Monday and Wednesday, 2:00&ndash;3:15 PM<br/>
-		    <strong>Where:</strong> IRB 1116, or sometimes Zoom <em>(link available on ELMS)</em>, Piazza <em>(link soon to be available on ELMS)</em>, &amp; Slack <em>(join link on ELMS)</em><br/>
+                    <strong>Where:</strong> IRB 1116, or sometimes Zoom <em>(link available on ELMS)</em>, Piazza <em>(link soon to be available on ELMS)</em>, &amp; Slack <em>(join link on ELMS)</em><br/>
                     <strong>Office hours:</strong> Whenever; email us first at {johnd,mknittel} at umd.edu<br/>
                 </address>
                 </p>
@@ -147,7 +149,7 @@
                 
                 <p>In addition to the course project, students will <strong>give two short, pre-recorded video presentations</strong> covering some research topic relevant to the class&mdash;a paper, papers, book chapter, recent event, topic of interest, and so on. This can be recorded via Zoom or another, similar piece of software; and, unless the student objects, we'll post this publicly on the course website. (Or, if you chat with me, you're welcome to instead write a publicly-available summary of a paper. I know not everyone wants a public video record. Still, push yourself! There's value in having a public presentation online that you can send to folks.) Students are welcome to choose their own adventure here, but John is also happy to help with topic selection; also, students are welcome—even encouraged!&mdash;to present on a topic related to their course project.</p>
                 <p>
-		We expect final grades to be calculated as follows, although this may change as the semester progress:<br/>
+                We expect final grades to be calculated as follows, although this may change as the semester progress:<br/>
                 </p>
                 <ul class="list-group">
                     <li class="list-group-item">10% weeky Pass/Fail quizzes on ELMS</li>
@@ -195,13 +197,13 @@
                             </th>
                         </tr>
                         <tr>
-                        <th scope="row">2</th>
-                        <td>1/26</td>
-                        <td>Intro to Game Theory</td>
-                        <td>Chapters 1 and 2 of <em>Algorithmic Game Theory</em>.  <a href="files/algorithmic-game-theory.pdf"><i class="fa fa-link" aria-hidden="true"></span></a></td>
-                        <td><a href="lecs/cmsc498t_s2022_lec02+03_dickerson.pdf"><i class="fa fa-file" aria-hidden="true"></i></a> pdf, <a href="lecs/cmsc498t_s2022_lec02+03_dickerson.pptx"><i class="fa fa-file" aria-hidden="true"></i></a> pptx</td>
-                        <td>Dickerson</td>
-                        <td></td>
+                            <th scope="row">2</th>
+                            <td>1/26</td>
+                            <td>Intro to Game Theory</td>
+                            <td>Chapters 1 and 2 of <em>Algorithmic Game Theory</em>.  <a href="files/algorithmic-game-theory.pdf"><i class="fa fa-link" aria-hidden="true"></span></a></td>
+                            <td><a href="lecs/cmsc498t_s2022_lec02+03_dickerson.pdf"><i class="fa fa-file" aria-hidden="true"></i></a> pdf, <a href="lecs/cmsc498t_s2022_lec02+03_dickerson.pptx"><i class="fa fa-file" aria-hidden="true"></i></a> pptx</td>
+                            <td>Dickerson</td>
+                            <td><strong>In-person lecture (&amp; recorded/on ELMS)</strong></td>
                         </tr>
                         <!--<tr>
                         <th scope="row">3</th>
